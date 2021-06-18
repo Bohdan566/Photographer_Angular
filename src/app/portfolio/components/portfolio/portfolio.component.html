@@ -1,0 +1,67 @@
+
+
+<!-----------------------------1st part ----Menu-------------------------------->
+
+<div [classList]="'div-portfolio-menu'">
+
+  <div [classList]="'div-cart'">
+    <a [routerLink]="'wedding'">
+      <div [classList]="'div-photo-cart'">
+        <div [class]="['div-photo', 'div-photo-1']"></div>
+        <div [classList]="'div-text'"><p>Weddings</p></div>
+      </div>
+    </a>
+  </div>
+
+  <div [classList]="'div-cart'">
+    <a [routerLink]="'walking'">
+      <div [classList]="'div-photo-cart'">
+        <div [class]="['div-photo', 'div-photo-2']"></div>
+        <div [classList]="'div-text'"><p>Walking around the city</p></div>
+      </div>
+    </a>
+  </div>
+
+  <div [classList]="'div-cart'">
+    <a [routerLink]="'portraits'">
+      <div [classList]="'div-photo-cart'">
+        <div [class]="['div-photo', 'div-photo-3']"></div>
+        <div [classList]="'div-text'"><p>Portraits</p></div>
+      </div>
+    </a>
+  </div>
+
+  <div [classList]="'div-cart'">
+    <a [routerLink]="'cities'">
+      <div [classList]="'div-photo-cart'">
+        <div [class]="['div-photo', 'div-photo-4']"></div>
+        <div [classList]="'div-text'"><p>Cities</p></div>
+      </div>
+    </a>
+  </div>
+
+  <div [classList]="'div-cart'">
+    <a [routerLink]="'animals'">
+      <div [classList]="'div-photo-cart'">
+        <div [class]="['div-photo', 'div-photo-5']"></div>
+        <div [classList]="'div-text'"><p>Animals</p></div>
+      </div>
+    </a>
+  </div>
+
+  <div [classList]="'div-cart'">
+    <a [routerLink]="'nature'">
+      <div [classList]="'div-photo-cart'">
+        <div [class]="['div-photo', 'div-photo-6']"></div>
+        <div [classList]="'div-text'"><p>Nature</p></div>
+      </div>
+    </a>
+  </div>
+
+</div>
+
+<!-----------------------------2nd part ----Routing-------------------------------->
+
+<div [classList]="'div-portfolio'">
+    <router-outlet></router-outlet>
+</div>

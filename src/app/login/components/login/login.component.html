@@ -1,0 +1,26 @@
+
+<div [classList]="'div-routes-cover'">
+  <div [classList]="'div-routes'">
+
+    <router-outlet></router-outlet>
+
+    <div [classList]="'div-routers-links'">
+      <div [classList]="'div-links'">
+        <p>If you are already registered, you need to log in</p>
+        <a [routerLink]="'logination'">login</a>
+      </div>
+      <div [classList]="'div-links'">
+        <p>If you are not registered yet, then please register</p>
+        <a [routerLink]="'registration'">registration</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+

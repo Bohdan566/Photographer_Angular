@@ -1,0 +1,56 @@
+
+.div-routes-cover{
+  background: url("../../../../assets/images/image12.jpeg");
+  background-size: cover;
+}
+
+.div-routes{
+  background: rgba(0, 0, 0, 0.2);
+  padding: 7.5% 0 7.5%;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.div-routers-links{
+  padding-top: 30px;
+  align-self: center;
+}
+
+.div-links{
+  text-align: center;
+  display: flex;
+}
+
+.div-links p{
+  margin: 6px;
+  font-size: 22px;
+  font-family: "Times New Roman";
+  color: white;
+  /*color: rgba(255, 215, 0, 0.9);*/
+  display: inline-block;
+}
+
+.div-links a{
+  /*text-decoration: none;*/
+  padding: 4px 6px;
+  font-family: "Times New Roman";
+  font-size: 22px;
+  color: rgba(255, 215, 0, 0.9);
+  /*border: 2px solid rgba(255, 215, 0, 0.9);*/
+  /*border-radius: 6px;*/
+  /*background: rgba(255, 255, 255, 0.1);*/
+}
+
+.div-links a:hover{
+  color: rgba(255, 140, 0, 0.9);
+}
+
+
+
+
+
+
+

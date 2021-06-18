@@ -1,0 +1,83 @@
+
+
+
+/*-------------------1st part----------------------------*/
+.div-img-cover{
+  background:  url("../../../assets/images/image4.jpg");
+  background-size: cover;
+}
+
+.div-img{
+  min-height: 750px;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-text {
+  color: white;
+  font-family: "Times New Roman";
+}
+
+.text1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.text2 {
+  font-size: 26px;
+  text-align: center;
+}
+
+
+/*-------------------2nd part----------------------------*/
+
+.div-about-cover{
+  display: flex;
+}
+
+.div-image{
+  width: 45%;
+  min-height: 650px;
+  background: url("../../../assets/images/image2.jpg");
+  background-size: cover;
+}
+
+.div-about{
+  padding: 50px 100px;
+  width: 55%;
+  min-height: 650px;
+  background: rgba(255, 69, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.div-about-header{
+  font-family: "Times New Roman";
+  font-size: 50px;
+}
+
+.div-about-text{
+
+  font-family: "Times New Roman";
+  font-size: 22px;
+}
+
+.div-about-link {
+  margin-top: 50px;
+}
+
+.div-about-link a{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.div-about-link a:hover{
+  font-size: 26px;
+  color: rgba(255, 140, 0, 0.9);
+}
+
+

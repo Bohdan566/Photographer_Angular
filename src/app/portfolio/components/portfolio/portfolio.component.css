@@ -1,0 +1,81 @@
+
+/*-------------------1st part----------------------------*/
+
+.div-portfolio-menu {
+  background: rgba(255, 69, 0, 0.1);
+  padding-top: 100px;
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  column-gap: 50px;
+  align-content: center;
+  justify-content: center;
+}
+
+.div-cart {
+  height: 250px;
+  width: 25%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.div-cart a{
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+.div-cart a:hover{
+  text-decoration: none;
+  text-align: center;
+  color: rgba(255, 215, 0, 0.9);
+}
+
+.div-photo {
+  width: 100%;
+  min-height: 200px;
+}
+
+.div-photo-1{
+  background: url("../../../../assets/images/image7.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.div-photo-2{
+  background: url("../../../../assets/images/image11.jpg");
+  background-size: cover;
+}
+
+.div-photo-3{
+  background: url("../../../../assets/images/image8.jpg");
+  background-size: cover;
+}
+
+.div-photo-4{
+  background: url("../../../../assets/images/image5.jpg");
+  background-size: cover;
+}
+
+.div-photo-5{
+  background: url("../../../../assets/images/image9.jpg");
+  background-size: cover;
+}
+
+.div-photo-6{
+  background: url("../../../../assets/images/image10.jpg");
+  background-size: cover;
+}
+
+.div-text p{
+  margin-top: 14px;
+  font-size: 28px;
+  font-family: "Times New Roman";
+  font-weight: bold;
+}
+
+
+

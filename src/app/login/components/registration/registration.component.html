@@ -1,0 +1,94 @@
+<div [classList]="'div-login-cover'">
+
+  <div [classList]="'div-login'">
+
+    <div [classList]="'div-login-signUp'">
+      <p>Registration</p>
+    </div>
+
+    <form action="" [formGroup]="loginForm" (ngSubmit)="save">
+
+      <div [class]="['div-input']">
+
+        <div [classList]="'div-input-text'"><p>Create your login name</p></div>
+
+        <input  type="text" [formControl]="login" placeholder="your login">
+
+        <div [class]="['loginIsEmpty']"><p>Field login can't be empty</p></div>
+        <div [class]="'loginIsWrong'" ><p>{{login?.errors?.message}}</p></div>
+
+
+      </div>
+
+
+      <div [class]="['div-input']">
+
+        <div [classList]="'div-input-text'"><p>Write your email</p></div>
+
+        <input  type="email" [formControl]="email" placeholder="your email">
+
+        <div [class]="'emailIsEmpty'" ><p>Field email can't be empty</p></div>
+        <div [class]="'emailIsWrong'"><p>{{email?.errors?.message}}</p></div>
+
+      </div>
+
+
+      <div [class]="['div-input']">
+
+        <div [classList]="'div-input-text'"><p>Create your password</p></div>
+
+        <div [classList]="'password'">
+
+          <input type="password" [formControl]="password" placeholder="your password" [class]="'input-password'">
+
+          <button [classList]="'password-control'" (click)="showPassword()"></button>
+
+        </div>
+
+        <div [class]="'passwordIsEmpty'"><p>Field password can't be empty</p></div>
+
+        <div [class]="'passwordIsTooShort'">
+          <p>Your password isn't enough safely,<br>
+            your password must be at least {{password?.errors?.minlength?.requiredLength}} characters long</p>
+        </div>
+
+
+      </div>
+
+
+      <div [class]="['div-input']">
+
+        <div [classList]="'div-input-text'"><p>Repeat your password</p></div>
+
+        <div [classList]="'password'">
+
+          <input  type="password" [formControl]="repeatPassword" placeholder="your password" [class]="'input-password'">
+
+          <button [classList]="'password-control'" (click)="showPassword()"></button>
+
+        </div>
+
+        <div [class]="'repeatPasswordIsEmpty'"><p>Field repetition password can't be empty</p></div>
+        <div [class]="'repeatPasswordIsDifferent'"><p>Your first example is differs to second example</p></div>
+
+      </div>
+
+      <div [classList]="'div-button'">
+
+        <button (click)="save()" [disabled]=false>register</button>
+
+      </div>
+
+    </form>
+
+    <div [class]="'successRegistration'">
+      <p>You are successfully registered, you need to confirm your email address {{email.value}}</p>
+    </div>
+    <div [class]="'unsuccessRegistration'"><p>This login or email is already taken</p></div>
+
+  </div>
+
+</div>
+
+
+

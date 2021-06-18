@@ -1,0 +1,56 @@
+
+
+<div [classList]="'div-login-cover'">
+
+  <div [classList]="'div-login'">
+
+    <div [classList]="'div-login-signUp'">
+      <p>Sign Up</p>
+    </div>
+
+    <form action="" [formGroup]="loginForm" (ngSubmit)="save">
+
+      <div [class]="['div-input']">
+
+        <div [classList]="'div-input-text'"><p>Your login name</p></div>
+
+        <input  type="text" [formControl]="login" placeholder="your login">
+
+        <div [class]="['loginIsEmpty']"><p>Field login can't be empty</p></div>
+
+      </div>
+
+
+      <div [class]="['div-input']">
+
+        <div [classList]="'div-input-text'"><p>Your password</p></div>
+
+        <div [classList]="'password'">
+
+          <input type="password" [formControl]="password" placeholder="your password" [class]="'input-password'">
+
+          <button [classList]="'password-control'" (click)="showPassword()"></button>
+
+        </div>
+
+        <div [class]="'passwordIsEmpty'"><p>Field password can't be empty</p></div>
+
+      </div>
+
+      <div [classList]="'div-button'">
+
+        <button (click)="save()" [disabled]=false>login</button>
+
+      </div>
+
+    </form>
+
+    <div>
+      <div [classList]="'loginIsWrong'"><p>{{login?.errors?.message}}</p></div>
+      <div [classList]="'passwordIsWrong'"><p>{{password?.errors?.message}}</p></div>
+    </div>
+
+  </div>
+
+</div>
+

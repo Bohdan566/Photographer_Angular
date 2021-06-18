@@ -1,0 +1,12 @@
+.div-login-cover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-login-cover p{
+  margin: 18px;
+  color: rgba(255, 215, 0, 0.9);
+  font-family: "Times New Roman";
+  font-size: 38px;
+}
